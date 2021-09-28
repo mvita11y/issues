@@ -1,5 +1,3 @@
-﻿<!DOCTYPE html>
-<!-- saved from url=(0061)file:///C:/Users/matthew.vitale/Downloads/Sample%2010-15.html -->
 <html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,11 +15,18 @@
 <link rel="stylesheet" href="main.css" media="screen">
 
 
-    
-  <style>a:focus, *:focus { outline:none; outline-offset:none; }</style></head>
+    <style> .burger {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+        margin: 6px 12;</style>
+  <style>a:focus, *:focus { outline: 4px solid orange !important; outline-offset:1px !important; } table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}</style></head>
   <body class="">
 
-   
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 
     
 
@@ -30,11 +35,12 @@
   <div class="usa-accordion">
     <header class="usa-banner-header">
       <div class="usa-grid usa-banner-inner"> 
-         <button tabindex="-1" class="usa-accordion-button usa-banner-button" aria-expanded="false" aria-controls="gov-banner"> <span class="usa-banner-button-text">COVID 19 Advisory</span> <p aria-hidden="true"> +</p></button>
+         <button class="usa-accordion-button" aria-expanded="false" aria-controls="gov-banner"> <span class="usa-banner-button-text">COVID-19 Advisory</span> <p aria-hidden="true"> +</p></button>
  </div>
     </header>
+      
     <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner" aria-hidden="true">
-      <div class="usa-banner-guidance-gov usa-width-one-half"> 
+      <div class="usa-banner-guidance-gov usa-width-one-half">
         <div class="usa-media_block-body">
           <p>  We’re working with public health officials to keep you 
 safe and informed. Stay up-to-date on COVID‑19 news, details and changes
@@ -51,8 +57,8 @@ safe and informed. Stay up-to-date on COVID‑19 news, details and changes
     </div>
   </div>
 </section>
-
 <br>
+
 
 
 
@@ -62,13 +68,13 @@ safe and informed. Stay up-to-date on COVID‑19 news, details and changes
 
   
     <div class="usa-navbar">
-      <button tabindex="-1" class="usa-menu-btn">Menu</button>
+      <button aria-label="Main Menu" class="usa-menu-btn"><div class="burger"></div><div class="burger"></div><div class="burger"></div></button>
       <div class="usa-logo" id="extended-mega-logo">
         
           
             
           
-          <h1 style="color:#02bfe7" class="usa-logo-text">Sample University</h1>
+          <h1 class="usa-logo-text">Sample University</h1>
         
       </div>
     </div>
@@ -184,7 +190,7 @@ safe and informed. Stay up-to-date on COVID‑19 news, details and changes
           
           <li>
             
-              <a class=" usa-nav-link " href="#">
+              <a class=" usa-nav-link  " href="#">
                 <span>Athletics</span>
               </a>
             
@@ -229,20 +235,25 @@ safe and informed. Stay up-to-date on COVID‑19 news, details and changes
     
     
 <main id="main-content" class="usa-hero" style="background-image: url('https://federalist-proxy.app.cloud.gov/site/18f/uswds-jekyll/assets/uswds/img/hero.png')">
- <div class="usa-grid">
-    <a href="#">
-<div role="img" onselectstart="return false" class="usa-hero-callout usa-section-dark">
-   
+  <div class="usa-grid">
+    <div class="usa-hero-callout usa-section-dark">
+      
       <h2>
         
-        <span class="usa-hero-callout-alt">Spring Registration</span>The deadline is quickly approaching</h2>
+        <span class="usa-hero-callout-alt">Fall</span>The deadline is quickly approaching</h2>
       
 
       
-      <div class="usa-hero-link">Registration</div>
+      <a class="usa-hero-link" href="#">Registration</a>
       
-   
-      </div></a>
+
+      <p>Check out the course catalog and explore our offerings for the upcoming semester.</p>
+
+
+      
+      <a class="usa-button" href="#">Course Catalog</a>
+      
+    </div>
   </div>
 </main>
 
@@ -255,12 +266,11 @@ safe and informed. Stay up-to-date on COVID‑19 news, details and changes
       </div>
       <div class="usa-width-two-thirds">
         <p>Ready to take your place in a bigger world, and be a part of a
- bigger conversation? With a degree from Sample University, you will. 
-Discover a better future for yourself.</p>
+ bigger conversation? With a degree from Sample University, you can discover a better future for yourself.</p>
 
-<p>Your access to Sample University is better than ever. Apply for free.
- Get free dual credit. Take online classes. Find out how easy it is to 
-become a student here.</p>
+<p>Your access to Sample University is better than ever. Find out how easy it is to 
+become a student here. Apply for free.
+ Get free dual credit. Take online classes.</p>
 
       </div>
     </section>
@@ -273,13 +283,17 @@ become a student here.</p>
       
 
 
-<section class="usa-section usa-section-dark usa-graphic_list">
+<section class="usa-section usa-section-dark usa-graphic_list" style="
+    background-color: green;
+">
   
     <div class="usa-grid usa-graphic_list-row">
     <div class="usa-width-one-half usa-media_block">
       <div class="usa-media_block-body">
-        <h3 style="color:#147488">TAKE A TOUR</h3>
-        <p>You can explore campus from anywhere.<a href="#">Click here</a>, to schedule a visit.<a href="#">Click here</a> to access our virtual tour. Discover the places where you’ll live, learn and hang out.</p> 
+        <h3 style="
+    color: red;
+">TAKE A TOUR</h3>
+        <p>Explore campus from anywhere. Set a time to <a href="#">visit in person</a>, explore campus yourself on a <a href="#">virtual tour</a> or join others on a Zoom tour. Discover the places where you’ll live, learn and hang out.</p> 
 
       </div>
     </div>
@@ -288,11 +302,13 @@ become a student here.</p>
     
     <div class="usa-width-one-half usa-media_block">
       <div class="usa-media_block-body">
-        <h3 style="color:#147488">News</h3>
-        <p><a href="#">Discover the latest stories, upcoming events</a> 
+        <h3 style="
+    color: red;
+">News</h3>
+        <p><a href="#">Discover the latest stories </a>,<a href="#"> upcoming events</a> 
 and other things going on in our community. From alumni across the world
  to students right here in Springfield, stay in the know about 
-everything</p>
+everything.</p>
 
       </div>
     </div>
@@ -301,8 +317,10 @@ everything</p>
     <div class="usa-grid usa-graphic_list-row">
     <div class="usa-width-one-half usa-media_block">
       <div class="usa-media_block-body">
-        <h3 style="color:#147488">Academic Calendar</h3>
-        <p>To find out what’s coming up and how you can get involved with our academic calendar <a href="file:///C:/Users/matthew.vitale/Downloads/Sample%2010-15.html#">click here.</a></p>
+        <h3 style="
+    color: red;
+">Academic Calendar</h3>
+        <p>Find out what’s coming up and how you can get involved through our <a href="#">academic calendar.</a></p>
 
       </div>
     </div>
@@ -311,8 +329,10 @@ everything</p>
     
     <div class="usa-width-one-half usa-media_block">
       <div class="usa-media_block-body">
-        <h3 style="color:#147488">Homecoming</h3>
-        <p>It's not a traditional <a href="#">homecoming this year</a>. But we're still celebrating and so can you, no matter where you live.</p>
+        <h3 style="
+    color: red;
+">Homecoming</h3>
+        <p>It's not a traditional <a href="#">homecoming </a> this year.  But we're still celebrating and excited to have you join us from all around the country!</p>
 
       </div>
     </div>
@@ -327,45 +347,163 @@ everything</p>
 
     <section class="usa-grid usa-section usa-content usa-layout-docs" style="outline: currentcolor none 0px;" id="s-content">
           <h2 id="section-heading">Popular Programs</h2>
-<p class="usa-font-lead">Undergaduate programs are marked in <span style="color:red">red</span>, Graduate programs are marked in <span style="color:blue">blue.</span></p>
-
-<table>
+            <table cellspacing="0">
 <tbody>
-
-
 <tr>
-<td><i>Name</i></td>
-<td><i>Rank</i></td>
-<td><i>Name</i></td>
-<td><i>Rank</i></td>
-<td><i>Name</i></td>
-<td><i>Rank</i></td>
-<td><i>Name</i></td>
-<td><i>Rank</i></td>
-<td><i>Name</i></td>
-<td><i>Rank</i></td>
-<td><i>Name</i></td>
-<td><i>Rank</i></td>
+<th scope="col" style="
+    font-weight: bolder;
+    background-color: #112E51;
+    color: #02bfe7;
+    align-content: center;
+">Rank</th>
+<th scope="col" style="
+    font-weight: bolder;
+    background-color: #112E51;
+    color: #02bfe7;
+    align-content: center;
+">Undergraduate</th>
+<th scope="col" style="
+    font-weight: bolder;
+    background-color: #112E51;
+    color: #02bfe7;
+    align-content: center;
+">     Graduate</th>
 </tr>
 <tr>
-<td style="color:red">Pyschology</td>
-<td>1</td>
-<td style="color:red">Accounting</td>
-<td>2</td>
-<td style="color:blue">Computer Science</td>
-<td>3</td>
-<td style="color:blue">Physical Therapy</td>
-<td>1</td>
-<td style="color:red">Engineering</td>
-<td>2</td>
-<td style="color:blue">Business Administration</td>
-<td>3</td>
+<th scope="row" style="
+    background-color: #f3c3ca;
+">1</th>
+<td style="background-color: #d6d7d9;">Psychology</td>
+<td style="
+    background-color: #d6d7d9;
+">Physical Therapy</td>
+</tr>
+<tr>
+<th scope="row" style="
+    background-color: #f3c3ca;
+">2</th>
+<td style="
+    background-color: #d6d7d9;
+">Accounting</td>
+<td style="
+    background-color: #d6d7d9;
+">Business Administration</td>
+</tr>
+<tr>
+<th scope="row" style="
+    background-color: #f3c3ca;
+">3</th>
+<td style="
+    background-color: #d6d7d9;
+">Engineering</td>
+<td style="
+    background-color: #d6d7d9;
+">Computer Science</td>
 </tr>
 </tbody>
 </table>
 
-<p><a href="#" class="usa-button usa-button-big">Learn More</a></p>
 
+
+<p><a href="#" class="usa-button usa-button-big">Academic Programs</a></p>
+        
+        <h2>Enrollment</h2>
+        <div style="overflow-x:auto"><table tabindex="0"><caption>Sample University Enrollment by Year</caption>
+<tbody>
+<tr>
+<th scope="col" style="font-weight: bolder; background-color: #112e51; color: #02bfe7; align-content: center;">
+<p>School Year</p>
+</th>
+<th scope="col" style="font-weight: bolder; background-color: #112e51; color: #02bfe7; align-content: center;">
+<p>Freshman</p>
+</th>
+<th scope="col" style="font-weight: bolder; background-color: #112e51; color: #02bfe7; align-content: center;">
+<p>Sophomore</p>
+</th>
+<th scope="col" style="font-weight: bolder; background-color: #112e51; color: #02bfe7; align-content: center;">
+<p>Junior</p>
+</th>
+<th scope="col" style="font-weight: bolder; background-color: #112e51; color: #02bfe7; align-content: center;">
+<p>Senior</p>
+</th>
+<th scope="col" style="font-weight: bolder; background-color: #112e51; color: #02bfe7; align-content: center;">
+<p>Total</p>
+</th>
+</tr>
+<tr>
+<th scope="row" style="background-color: #f3c3ca;">
+<p>2018</p>
+</th>
+<td style="text-align: center;">
+<p>4240</p>
+</td>
+<td style="text-align: center;">
+<p>3218</p>
+</td>
+<td style="text-align: center;">
+<p>3418</p>
+</td>
+<td style="text-align: center;">
+<p>4639</p>
+</td>
+<td style="text-align: center;"><strong>12079</strong></td>
+</tr>
+<tr>
+<th scope="row" style="background-color: #f3c3ca;">
+<p>2019</p>
+</th>
+<td style="text-align: center;">
+<p>4376</p>
+</td>
+<td style="text-align: center;">
+<p>3319</p>
+</td>
+<td style="text-align: center;">
+<p>3571</p>
+</td>
+<td style="text-align: center;">
+<p>4641</p>
+</td>
+<td style="text-align: center;"><strong>17618</strong></td>
+</tr>
+<tr>
+<th scope="row" style="background-color: #f3c3ca;">
+<p>2020</p>
+</th>
+<td style="text-align: center;">
+<p>2583</p>
+</td>
+<td style="text-align: center;">
+<p>2007</p>
+</td>
+<td style="text-align: center;">
+<p>2015</p>
+</td>
+<td style="text-align: center;">
+<p>2523</p>
+</td>
+<td style="text-align: center;"><strong>10137</strong></td>
+</tr>
+<tr>
+<th scope="row" style="background-color: #f3c3ca;">
+<p>2021</p>
+</th>
+<td style="text-align: center;">
+<p>4007</p>
+</td>
+<td style="text-align: center;">
+<p>2136</p>
+</td>
+<td style="text-align: center;">
+<p>1963</p>
+</td>
+<td style="text-align: center;">
+<p>3117</p>
+</td>
+<td style="text-align: center;"><strong>13263</strong></td>
+</tr>
+</tbody>
+  </table></div>
 
     </section>
 
@@ -380,7 +518,7 @@ everything</p>
   
 
   
-   
+  
   
 
 
@@ -495,4 +633,8 @@ everything</p>
 
   
 
-<style type="text/css"></style></body></html>
+<style type="text/css"></style>
+
+
+
+</body></html>
